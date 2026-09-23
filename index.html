@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="icon" href="recursos/icone3.png" type="image/png">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="recursos/miranha2.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- <div class="card-container">
+        <img src="recursos/perfil.png" alt="Avatar" class="profile-pic">
+        <h1>Pedro</h1>
+    </div> -->
+    <div class="conteudo">
+        <div class="card-container">
+            <img src="recursos/perfil.png" alt="Avatar" class="profile-pic">
+            <h1>Pedro</h1>
+        </div>
+        <div class="links"
+>
+            <a href="https://www.instagram.com/jp.mouraxz/" target="_blank" class="btn instagram">Instagram</a>
+            
+            <button onclick="copiarDiscord()" class="btn discord" id="btn-discord">Discord</button>
+
+            <a href="https://www.twitch.tv/cakesweetz" target="_blank" class="btn twitch">Twitch</a>
+
+            <a href="https://x.com/CakeSweet8" target="_blank" class="btn twitter">X</a>
+    </div>
+    <script>
+        function copiarDiscord() {
+            const discordTag = "quarksw";
+            navigator.clipboard.writeText(discordTag)
+                .then(() => {
+                    const btnDiscord = document.getElementById("btn-discord");
+                    btnDiscord.textContent = "Copiado!";
+                    setTimeout(() => {
+                        btnDiscord.textContent = "Discord";
+                    }, 1000);
+                })
+                .catch(err => {
+                    console.error('Erro ao copiar para a área de transferência: ', err);
+                });
+        }
+        </script>
+</body>
