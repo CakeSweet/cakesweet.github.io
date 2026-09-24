@@ -50,4 +50,12 @@
                 });
         }
         </script>
+
+    <script>
+        // Seleciona todos os vídeos da página e bloqueia o recurso do navegador
+        document.querySelectorAll('video').forEach(video => {
+            video.disablePictureInPicture = true;
+        });
+    </script>
+
 </body>
