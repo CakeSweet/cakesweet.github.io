@@ -24,6 +24,7 @@ body {
 body {
     min-height: 100dvh;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-color: var(--tinta);
     color: var(--texto);
     font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
@@ -461,6 +462,10 @@ button.btn {
 .twitch {
     --marca: #9146ff;
 }
+
+/**.steam {
+    --marca: #263a60;
+} **/
 
 .twitter {
     --marca: #e8e8ee;

@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0a0710">
-    <meta name="description" content="Links do Pedro — Instagram, Discord, Twitch e X.">
-    <title>Pedro | Links</title>
+    <title>Perfil</title>
+
+
+    <meta property="og:site_name" content="Perfil" />
+    
+    <meta property="og:title" content="Pedro" />
+    
+    <meta property="og:url" content="https://cakesweet.github.io/" />
+    
+    <meta property="og:description" content="Não me pergunte" />
+    
+    <meta name="theme-color" content="#e06a6a" />
+    
+    <meta property="og:image" content="https://i.ibb.co/dsjSs6jH/967181b6b204d4ca8ae5adcfce65fd9e.jpg" />
+
+
 
     <link rel="icon" href="recursos/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +34,6 @@
         </video>
     </div>
 
-    <!-- camadas visuais: escurece o vídeo, dá o tom vermelho/azul e cria o vinheta -->
     <div class="capa" aria-hidden="true"></div>
     <div class="aranha-fundo" aria-hidden="true"></div>
     <div class="teia teia-esquerda" aria-hidden="true"></div>
@@ -67,6 +80,14 @@
                 <svg class="acao" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
             </a>
 
+<!--            <a href="https://steamcommunity.com/id/cakesweetz/" target="_blank" rel="noopener noreferrer" class="btn steam">
+                <svg class="icone" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/>
+                </svg>
+                <span class="texto"><span class="rotulo">Steam</span><span class="detalhe">QuarkSw</span></span>
+                <svg class="acao" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>
+            </a> -->
+
             <a href="https://x.com/CakeSweet8" target="_blank" rel="noopener noreferrer" class="btn twitter">
                 <svg class="icone" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
@@ -94,7 +115,6 @@
                 }, 1400);
             };
 
-            // fallback para navegadores antigos ou sem permissão de clipboard
             const copiarSemApi = () => {
                 const campo = document.createElement("textarea");
                 campo.value = discordTag;
